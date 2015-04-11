@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+Hello <%:Session["user"]%>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .nuevoEstilo2 {
+            background-image: url('/Sin%20título1.png');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: 0px 3px;
+            height: 294px;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        .nuevoEstilo3 {
+            border-style: groove;
+            border-width: thin;
+            background-image: url('/bee.jpg');
+            background-repeat: no-repeat;
+            height: 127px;
+            width: 725px;
+            border-radius: 15px;
+        }
+        .nuevoEstilo6 {
+            background-image: url('/Sin%20título1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 4px 2px;
+            height: 301px;
+            width: 249px;
+        }
+        .nuevoEstilo7 {
+            border-style: dashed;
+            background-image: none;
+        }
+        .auto-style12 {
+            height: 115px;
+            text-align: center;
+            font-weight: 700;
+            font-size: xx-large;
+        }
+        .nuevoEstilo8 {
+            background-image: url('/11086663_372382972970395_591583667_n.jpg');
+            background-repeat: repeat;
+        }
+        .auto-style20 {
+        }
+        .nuevoEstilo9 {
+            background-color: #FFFF99;
+            border: medium dashed #000000;
+            border-radius: 50px;
+        }
+        .auto-style25 {
+            width: 769px;
+        }
+        .auto-style26 {
+            border-style: dashed;
+            background-image: none;
+            width: 385px;
+            height: 100px;
+        }
+        .auto-style29 {
+            background-color: #FFFF99;
+            border: medium dashed #000000;
+            border-radius: 50px;
+            height: 47px;
+        }
+        .asdasdasd {
+            border-style: groove;
+        }
+        .estilo {
+            background-color: #FFFFFF;
+            background-image: url('/fondo2.jpg');
+            border-radius: 50px;
+        }
+        .auto-style30 {
+            color: #FF0066;
+        }
+        .auto-style31 {
+            width: 385px;
+        }
+        </style>
+</head>
+<body style="height: 1081px">
+ 
+    <form id="form1" runat="server" class="nuevoEstilo8">
+        <table class="auto-style9">
+            <tr>
+                <td class="nuevoEstilo9">&nbsp;&nbsp;
+                    <asp:Button ID="Button6" runat="server" Text="Login" BackColor="Transparent" CssClass="asdasdasd" OnClick="Button6_Click" style="font-weight: 700" />
+&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button7" runat="server" Text="Salir" BackColor="Transparent" CssClass="asdasdasd" OnClick="Button7_Click" style="font-weight: 700" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label1" runat="server" style="font-weight: 700; text-decoration: underline" Visible="False"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label2" runat="server" Text="0" Visible="False"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label3" runat="server" Text="Label" Visible="False"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <%--           <img alt="" class="nuevoEstilo3" src="bee.jpg" /></td>--%>
+                <asp:ImageButton ID="imagem" runat="server" src ="bee.jpg" PostBackUrl="~/Default.aspx" OnClick="imagem_Click" />
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <div class="estilo" style="height: 102px">
+                        <br />
+                        Institución Educativa Inicial &quot;El Nazareno&quot; - Arequipa</div>
+                </td>
+            </tr>
+            <tr class="nuevoEstilo7">
+                <td class="auto-style29">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" Text="Inicio" BackColor="Transparent" OnClick="Button1_Click" style="font-weight: 700" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" Text="Busqueda" BackColor="Transparent" OnClick="Button2_Click" style="font-weight: 700" />
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:Button ID="Button4" runat="server" Text="Consultas" BackColor="Transparent" OnClick="Button2_Click" style="font-weight: 700" />
+&nbsp;&nbsp; &nbsp;
+                    <asp:Button ID="Button3" runat="server" Text="Imagenes" BackColor="Transparent" style="font-weight: 700" OnClick="Button3_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button5" runat="server" Text="Contacto" BackColor="Transparent" OnClick="Button5_Click" style="font-weight: 700" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style20">
+                    <table class="auto-style21">
+                        <tr>
+                            <td class="auto-style26">
+                                <div style="height: 625px">
+                                    <br />
+                                    <br />
+                                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <div class="nuevoEstilo2">
+                                        <br />
+                                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style30">Mensajes :</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="auto-style28">
+                                <div class="nuevoEstilo9" style="height: 714px; text-align: center">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </td>
+                            <td class="auto-style26"></td>
+                        </tr>
+                        <tr>
+                            <td class="auto-style31">&nbsp;</td>
+                            <td class="auto-style25">&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </table>
+    </form>
+ 
+</body>
+</html>
